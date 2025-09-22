@@ -1,0 +1,14 @@
+contract_id,summary
+C001,"- Company A is contracted to deliver 100 units per month.
+- Late deliveries are subject to a penalty of $1,000 per week.
+- Penalty clause ensures timely deliveries.
+Risk clause:
+- Financial penalty for late deliveries."
+C002,"- Company B: Pay $50,000 upon project completion.
+- Company C: Receive $50,000 upon project completion.
+- Obligations: Company B must pay $50,000 upon project completion, and Company C must receive $50,000 upon project completion.
+- Risk: Early termination may result in a penalty of $5,000."
+C003,"This contract outlines obligations related to confidentiality and data protection, with automatic termination in case of any breaches. Risk clauses: Confidentiality and data protection."
+C004,"This contract obligates Company D to compensate for any infringement of intellectual property rights. The contract also includes a clause that holds the party at fault responsible for any damages suffered due to such infringement.
+
+Risk clause: The indemnity may be subject to limitations or exemptions depending on the specific laws in the relevant jurisdiction. It is recommended for both parties to consult with legal experts to ensure the contract's enforceability."

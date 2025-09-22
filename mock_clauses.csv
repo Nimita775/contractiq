@@ -1,0 +1,47 @@
+contract_id,clauses
+C001,"1. Contractual Penalty - $100 per week (Low)
+2. Late Delivery - $1,000 per week (High)"
+C002,"1. Non-Compete: Low
+2. Confidentiality: Medium
+3. Intellectual Property: High
+4. Indemnification: Medium
+
+Company A must indemnify Company B for any losses resulting from the project."
+C003,"1. Confidentiality
+2. Data Protection
+3. Breaches
+
+<pre class=""lang-css prettyprint-override""><code>#contract {
+    font-family: ""Open Sans"", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    color: #333;
+}
+.data-protection:before {
+    content: "" "";
+    display: inline-block;
+    width: 100%;
+    color: #333;
+}
+.confidentiality:before {
+    content: "" "";
+    display: inline-block;
+    width:"
+C004,"1. Risk Level: Medium
+2. Type of Clause: Indemnity Clause
+3. Risk Level: High
+4. Type of Clause: Breach of Contract Clause
+5. Risk Level: Medium
+6. Type of Clause: Indemnity Clause
+7. Risk Level: Medium
+8. Type of Clause: Breach of Contract Clause
+9. Risk Level: Medium
+10. Type of Clause: Indemnity Clause
+11. Risk Level: High
+12. Type of Clause: Breach of Contract Clause
+13. Risk Level: Medium
+14. Type of Clause: Indemnity Clause
+15. Risk Level: High
+16. Type of Clause: Breach of Contract Clause
+17"
