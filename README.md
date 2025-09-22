@@ -1,57 +1,72 @@
-# 📝 ContractIQ – Generative AI Contract Analysis (Mock Demo)
+# 📝 ContractIQ — Instant Contract Summaries & Risk Scanner
 
-A proof-of-concept showing how **BigQuery Generative AI**–style contract analytics can be built **without Google Cloud** using open-source tools and mock data.  
-This repo contains the code and outputs submitted for the **Bolt Hackathon – BigQuery Generative AI Challenge**.
-
----
-
-## 📂 Repository Contents
-| File | Description |
-|------|------------|
-| `ContractIQ_demo.ipynb` | Kaggle notebook with the full simulation workflow |
-| `mock_contracts.csv` | Raw mock contract text |
-| `mock_summaries.csv` | AI-generated one-paragraph contract summaries |
-| `mock_clauses.csv` | Clause breakdown with clause types & risk tags |
-| `mock_risk_scores.csv` | Numeric risk scores (1–10) for each contract |
+**Hackathon Proof-of-Concept: BigQuery Generative AI Simulation using Kaggle Notebook**
 
 ---
 
-## 🚀 Project Overview
-**Goal:** Provide instant contract summaries, identify key clauses, and assign risk scores—mimicking BigQuery’s `AI.GENERATE_*` functions.
+## **Project Overview**
 
-### Key Steps
-1. **Data Simulation**  
-   Created a `mock_contracts.csv` dataset representing four sample contracts.
+Enterprises and legal teams often review **thousands of contracts** (NDAs, SOWs, vendor agreements). Manual review is **slow, error-prone, and costly**.  
 
-2. **Generative AI Processing**  
-   Used the Hugging Face `transformers` pipeline with a lightweight model  
-   (`tiiuae/falcon-7b-instruct`) to:
-   * Generate concise summaries  
-   * Extract clauses & risk tags  
-   * Assign a numeric risk score (1–10)
+**ContractIQ** automates contract review by:
 
-3. **Output Export**  
-   All generated outputs saved as CSVs, mirroring what a real BigQuery pipeline would return.
+- Generating **plain-English summaries** of contracts  
+- Extracting **clauses with risk tags**  
+- Assigning **numeric risk scores** (1–10)  
+- Providing **interactive visualizations** for quick analysis  
+
+This notebook demonstrates the **end-to-end workflow** entirely offline using mock data and a local LLM.
 
 ---
 
-## 🛠️ Tech Stack
-- **Python** (Pandas, Regex, Hugging Face Transformers)
-- **Kaggle Notebook** (no paid cloud required)
-- **Local LLM**: `tiiuae/falcon-7b-instruct` for offline text generation
+## **Problem Statement**
+
+Legal teams spend hours or days triaging contracts manually. High-risk clauses can be **overlooked**, delaying deal approvals. ContractIQ **reduces triage time to seconds**, enabling faster deal reviews and automated red-flag alerts.
 
 ---
 
-## 📊 Example Output
+## **Impact**
 
-| contract_id | risk_score | summary (truncated) |
-|-------------|-----------|---------------------|
-| C001 | 8 | Company A delivers 100 units ... |
-| C002 | 6 | Company B pays \$50,000 upon ... |
-| C003 | 8 | Confidentiality and data ... |
-| C004 | 5 | Company D compensates vendor ... |
+- **Faster contract analysis** — seconds vs hours/days  
+- **Automated red-flag detection** for high-risk clauses  
+- **Measurable cost reduction** for legal teams  
+- **Visual & interactive outputs** for stakeholders
 
 ---
+
+## **Dataset**
+
+- **Mock contracts dataset** (`mock_contracts.csv`) simulates real-world contracts:  
+  - `contract_id` – Unique ID  
+  - `raw_text` – Contract content  
+
+- **Outputs**:  
+  - `mock_summaries.csv` – One-paragraph contract summaries  
+  - `mock_clauses.csv` – Extracted clauses with risk levels  
+  - `mock_risk_scores.csv` – Overall numeric risk score per contract  
+
+---
+
+## **High-Level Architecture & Workflow**
+
+### **Data Flow**
+
+[Raw Contracts (PDFs/CSV)]
+│
+▼
+[Pre-processing: OCR / Parsing]
+│
+▼
+[Mock Contract Table (contract_id, raw_text)]
+│
+▼
+[Generative AI Simulation (Local LLM)]
+├─ Contract Summaries (text)
+├─ Clause Extraction & Risk Tags (table)
+└─ Contract Risk Scores (numeric)
+│
+▼
+[Visualizations / CSV Export / Dashboard]
 
 ## ▶️ Reproduce the Demo
 1. **Open on Kaggle**  
