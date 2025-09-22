@@ -55,7 +55,7 @@ This repo contains the code and outputs submitted for the **Bolt Hackathon – B
 
 ## ▶️ Reproduce the Demo
 1. **Open on Kaggle**  
-   Upload all repo files or fork the published notebook.
+  [ContractIQ Demo Notebook](https://www.kaggle.com/code/nimitagurjar/contractiq-generative-ai-contract-summarizer)
 
 2. **Install dependencies**  
    ```bash
